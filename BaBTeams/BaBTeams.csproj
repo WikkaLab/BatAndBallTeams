@@ -15,7 +15,7 @@
 		<ApplicationTitle>BaBTeams</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.babteams</ApplicationId>
+		<ApplicationId>com.wikkalab.babteams</ApplicationId>
 		<ApplicationIdGuid>076F2A34-4BCD-4532-B80A-A531E0AD468D</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -46,6 +46,14 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Raw\teamsdata.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0-preview3" />
 	</ItemGroup>
 
 </Project>

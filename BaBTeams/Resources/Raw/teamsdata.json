@@ -1,0 +1,37 @@
+﻿[
+  {
+    "Name": "Astros de Granada",
+    "Location": "Granada",
+    "Image": "https://instagram.fagp2-1.fna.fbcdn.net/v/t51.2885-19/275828281_1107743453126367_4107308683478016184_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fagp2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=Jl941WzwX_sAX_LgOdx&edm=ABfd0MgBAAAA&ccb=7-5&oh=00_AT-VN59r02o1ju0rTZbIYu3YBjx6MtYvnFhksCZf4LJC7Q&oe=629CB129&_nc_sid=7bff83",
+    "Latitude": -8.783195,
+    "Longitude": 34.508523
+  },
+  {
+    "Name": "Kyrios",
+    "Location": "Córdoba",
+    "Image": "https://www.muchodeporte.com/media/imagenes/club_muchodeporte/kyrios_cordoba_beisbol_y_softbol_club5.jpg",
+    "Latitude": -8.783195,
+    "Longitude": 34.508523
+  },
+  {
+    "Name": "CBS Almería",
+    "Location": "Almería",
+    "Image": "https://instagram.fagp2-1.fna.fbcdn.net/v/t51.2885-19/89261806_662315171201176_1255211824412884992_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fagp2-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=gQGXiAt4jlYAX-pjLjh&edm=ABfd0MgBAAAA&ccb=7-5&oh=00_AT92GHuJqXm1hv3Y_9TKQB94gu9jmx89I-IMcxoOhJ1xNg&oe=629D9232&_nc_sid=7bff83",
+    "Latitude": -8.783195,
+    "Longitude": 34.508523
+  },
+  {
+    "Name": "Orioles de Oviedo",
+    "Location": "Oviedo",
+    "Image": "https://instagram.fagp2-1.fna.fbcdn.net/v/t51.2885-15/19429380_180574142477168_590039476093321216_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fagp2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=jqlLsnCiIZ8AX9GfL46&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTU0NTc5MzI1MzE2MzU5NzQyNA%3D%3D.2-ccb7-5&oh=00_AT-lWzExX_QLIgh3SByhxy_Yg2VoM9Qzi4PXTyyTcQZZBw&oe=629D4421&_nc_sid=30a2ef",
+    "Latitude": -8.783195,
+    "Longitude": 34.508523
+  },
+  {
+    "Name": "Málaga Mets",
+    "Location": "Málaga",
+    "Image": "https://instagram.fagp2-1.fna.fbcdn.net/v/t51.2885-19/241371024_2585253098287217_8387474482231534609_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fagp2-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=PNYdyPPtPiEAX--N2o6&edm=ABfd0MgBAAAA&ccb=7-5&oh=00_AT_lOZz5iIdeLnlVCv55MzpH8Z1B_W688GmEmBN38diw6A&oe=629D582A&_nc_sid=7bff83",
+    "Latitude": -8.783195,
+    "Longitude": 34.508523
+  }
+]
