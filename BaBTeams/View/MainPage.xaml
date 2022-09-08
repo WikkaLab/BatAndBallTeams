@@ -11,48 +11,55 @@
         ColumnSpacing="5"
         RowDefinitions="*,Auto"
         RowSpacing="0">
-        <Label Text="{Binding Teams.Count}"/>
-        <CollectionView Grid.ColumnSpan="2"
+
+        <CollectionView
+            Grid.ColumnSpan="2"
             ItemsSource="{Binding Teams}"
             SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="model:Team">
-                    <!--<Frame HeightRequest="160" Style="{StaticResource CardView}">-->
-                    <HorizontalStackLayout Padding="10">
-                        <!--<Frame Margin="10"
-                               CornerRadius="50"
-                               HeightRequest="120"
-                               WidthRequest="120"
-                               VerticalOptions="Center">-->
-                        <Image Aspect="AspectFill" Source="{Binding Image}"
+                    <Grid Padding="10">
+                        <Frame HeightRequest="125"
+                               Padding="0"
+                               Style="{StaticResource CardView}">
+                            <Grid Padding="0"
+                                  ColumnDefinitions="125, *">
+
+                                <Image Aspect="AspectFill"
+                                       Source="{Binding Image}"
                                        WidthRequest="125"
                                        HeightRequest="125"/>
-                        <!--</Frame>-->
-                        <VerticalStackLayout
-                                    Grid.Column="1"
-                                    Padding="10">
-                            <Label FontSize="25" Text="{Binding Name}" />
-                            <Label FontSize="15" Text="{Binding Location}" />
-                        </VerticalStackLayout>
-                    </HorizontalStackLayout>
-                    <!--</Frame>-->
+
+                                <VerticalStackLayout Grid.Column="1"
+                                                     Padding="10"
+                                                     VerticalOptions="Center">
+                                    <Label Text="{Binding Name}"
+                                           FontSize="25"/>
+                                    <Label Text="{Binding Location}"
+                                           FontSize="20"/>
+
+                                </VerticalStackLayout>
+
+                            </Grid>
+                        </Frame>
+                    </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <Button Text="Get teams" 
+        <Button Text="Get data"
+                Style="{StaticResource ButtonOutline}"
                 Command="{Binding GetTeamsCommand}"
                 IsEnabled="{Binding IsNotBusy}"
                 Grid.Row="1"
-                Grid.Column="0"
                 Margin="8"/>
-
 
         <ActivityIndicator IsVisible="{Binding IsBusy}"
                            IsRunning="{Binding IsBusy}"
                            HorizontalOptions="FillAndExpand"
-                           VerticalOptions="CenterAndExpand"
+                           VerticalOptions="FillAndExpand"
                            Grid.RowSpan="2"
-                           Grid.ColumnSpan="2"/>
+                           Grid.Column="2"/>
+
     </Grid>
 </ContentPage>

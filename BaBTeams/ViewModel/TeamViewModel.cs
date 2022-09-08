@@ -19,7 +19,7 @@ namespace BaBTeams.ViewModel
             Title = "All teams in Spain";
         }
 
-        [ICommand]
+        [RelayCommand]
         async Task GetTeamsAsync()
         {
             if (IsBusy) return;

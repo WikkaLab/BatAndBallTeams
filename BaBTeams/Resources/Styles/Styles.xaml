@@ -381,4 +381,25 @@
         <Setter Property="SelectedTabColor" Value="{AppThemeBinding Light={StaticResource Gray950}, Dark={StaticResource Gray200}}" />
     </Style>
 
+    <!-- Application resource dictionary -->
+    <Style x:Key="ButtonOutline" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="TextColor" Value="{StaticResource Primary}"/>
+        <Setter Property="BorderColor" Value="{StaticResource Primary}"/>
+        <Setter Property="BorderWidth" Value="2"/>
+        <Setter Property="HeightRequest" Value="40"/>
+        <Setter Property="CornerRadius" Value="20"/>
+        <Setter Property="Visual" Value="Material"/>
+    </Style>
+    <Style x:Key="CardView" TargetType="Frame">
+        <Setter Property="BorderColor" Value="#DDDDDD"/>
+        <Setter Property="Visual" Value="Material"/>
+        <Setter Property="HasShadow" Value="True"/>
+        <Setter Property="IsClippedToBounds" Value="True"/>
+        <Setter Property="InputTransparent" Value="True"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="CornerRadius" Value="10"/>
+    </Style>
+
 </ResourceDictionary>
