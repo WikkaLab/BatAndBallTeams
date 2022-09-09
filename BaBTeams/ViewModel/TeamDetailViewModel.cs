@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BaBTeams.Model;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace BaBTeams.ViewModel
 {
+    [QueryProperty("Team", "Team")]
     public partial class TeamDetailViewModel : BaseViewModel
     {
+        public TeamDetailViewModel()
+        {
+
+        }
+
+        [ObservableProperty]
+        Team team;
     }
 }

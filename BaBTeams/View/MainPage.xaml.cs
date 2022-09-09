@@ -4,10 +4,10 @@ namespace BaBTeams.View;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage(TeamViewModel viewModel)
-	{
-		InitializeComponent();
-		BindingContext = viewModel;
-	}
+    public MainPage(TeamViewModel viewModel)
+    {
+        InitializeComponent();
+        BindingContext = viewModel;
+    }
 }
 

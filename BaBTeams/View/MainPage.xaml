@@ -24,12 +24,15 @@
                                Style="{StaticResource CardView}">
                             <Grid Padding="0"
                                   ColumnDefinitions="125, *">
-
                                 <Image Aspect="AspectFill"
                                        Source="{Binding Image}"
                                        WidthRequest="125"
-                                       HeightRequest="125"/>
-
+                                       HeightRequest="125">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}"
+                                                      Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:TeamViewModel}}, Path=GoToDetailsCommand}"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
                                 <VerticalStackLayout Grid.Column="1"
                                                      Padding="10"
                                                      VerticalOptions="Center">
@@ -37,29 +40,24 @@
                                            FontSize="25"/>
                                     <Label Text="{Binding Location}"
                                            FontSize="20"/>
-
                                 </VerticalStackLayout>
-
                             </Grid>
                         </Frame>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
         <Button Text="Get data"
                 Style="{StaticResource ButtonOutline}"
                 Command="{Binding GetTeamsCommand}"
                 IsEnabled="{Binding IsNotBusy}"
                 Grid.Row="1"
                 Margin="8"/>
-
         <ActivityIndicator IsVisible="{Binding IsBusy}"
                            IsRunning="{Binding IsBusy}"
                            HorizontalOptions="FillAndExpand"
                            VerticalOptions="FillAndExpand"
                            Grid.RowSpan="2"
-                           Grid.Column="2"/>
-
+                           Grid.ColumnSpan="2"/>
     </Grid>
 </ContentPage>

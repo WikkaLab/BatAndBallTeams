@@ -1,5 +1,6 @@
 ﻿using BaBTeams.Model;
 using BaBTeams.Services;
+using BaBTeams.View;
 using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
@@ -50,6 +51,21 @@ namespace BaBTeams.ViewModel
             {
                 IsBusy = false;
             }
+        }
+
+        [RelayCommand]
+        async Task GoToDetailsAsync(Team team)
+        {
+            if (team is null) return;
+
+            // Method 1
+            //await Shell.Current.GoToAsync($"{nameof(DetailsPage)}?id={team.Name}");
+            // Method 2, James Montemagno approves! 👍
+            await Shell.Current.GoToAsync($"{nameof(DetailsPage)}", true,
+                new Dictionary<string, object>
+                {
+                    {nameof(Team), team}
+                });
         }
     }
 }
