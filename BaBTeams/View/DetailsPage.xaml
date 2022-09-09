@@ -2,10 +2,41 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BaBTeams.View.DetailsPage"
-             Title="DetailsPage">
-    <StackLayout>
-        <Label Text="Welcome to .NET MAUI!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-    </StackLayout>
+             xmlns:viewmodel="clr-namespace:BaBTeams.ViewModel"
+             x:DataType="viewmodel:TeamDetailViewModel"
+             Title="{Binding Team.Name}">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="*, Auto, *"
+              RowDefinitions="160, Auto">
+                <BoxView BackgroundColor="{StaticResource Primary}"
+                     Grid.ColumnSpan="3"
+                     HeightRequest="160"
+                     HorizontalOptions="FillAndExpand"/>
+                <Frame Grid.RowSpan="2"
+                   Grid.Column="1"
+                   HeightRequest="160"
+                   WidthRequest="160"
+                   CornerRadius="80"
+                   HorizontalOptions="Center"
+                   IsClippedToBounds="True"
+                   Padding="0"
+                   Margin="0,80,0,0">
+                    <Image Aspect="AspectFill"
+                       HeightRequest="160"
+                       WidthRequest="160"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Source="{Binding Team.Image}"/>
+                </Frame>
+            </Grid>
+            <VerticalStackLayout Padding="10"
+                                 Spacing="10">
+                <Label Text="{Binding Team.Location}"/>
+                <Label Text="{Binding Team.FoundationYear}"/>
+                <Label Text="{Binding Team.Category}"/>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+         
+    </ScrollView>
 </ContentPage>

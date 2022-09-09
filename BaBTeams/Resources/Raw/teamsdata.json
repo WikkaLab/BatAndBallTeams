@@ -4,34 +4,44 @@
     "Location": "Granada",
     "Image": "https://th.bing.com/th/id/OIP.FoFYITBIc5lhWHrI1kny4wHaE7?pid=ImgDet&w=2420&h=1613&rs=1",
     "Latitude": -8.783195,
-    "Longitude": 34.508523
+    "Longitude": 34.508523,
+    "FoundationYear": 2004,
+    "Category": "Softball"
   },
   {
     "Name": "Kyrios",
     "Location": "Córdoba",
     "Image": "https://www.muchodeporte.com/media/imagenes/club_muchodeporte/kyrios_cordoba_beisbol_y_softbol_club5.jpg",
     "Latitude": -8.783195,
-    "Longitude": 34.508523
+    "Longitude": 34.508523,
+    "FoundationYear": 1990,
+    "Category": "Baseball and softball"
   },
   {
     "Name": "CBS Almería",
     "Location": "Almería",
     "Image": "https://th.bing.com/th/id/OIP.FoFYITBIc5lhWHrI1kny4wHaE7?pid=ImgDet&w=2420&h=1613&rs=1",
     "Latitude": -8.783195,
-    "Longitude": 34.508523
+    "Longitude": 34.508523,
+    "FoundationYear": 1999,
+    "Category": "Baseball"
   },
   {
     "Name": "Orioles de Oviedo",
     "Location": "Oviedo",
     "Image": "https://th.bing.com/th/id/OIP.FoFYITBIc5lhWHrI1kny4wHaE7?pid=ImgDet&w=2420&h=1613&rs=1",
     "Latitude": -8.783195,
-    "Longitude": 34.508523
+    "Longitude": 34.508523,
+    "FoundationYear": 1998,
+    "Category": "Baseball and softball"
   },
   {
     "Name": "Málaga Mets",
     "Location": "Málaga",
     "Image": "https://th.bing.com/th/id/OIP.FoFYITBIc5lhWHrI1kny4wHaE7?pid=ImgDet&w=2420&h=1613&rs=1",
     "Latitude": -8.783195,
-    "Longitude": 34.508523
+    "Longitude": 34.508523,
+    "FoundationYear": 2021,
+    "Category": "Baseball"
   }
 ]
