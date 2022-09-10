@@ -1,11 +1,17 @@
-﻿namespace BaBTeams;
+﻿using BaBTeams.Data;
+
+namespace BaBTeams;
 
 public partial class App : Application
 {
-    public App()
+    public static TeamsRepository TeamsRepository { get; private set; }
+
+    public App(TeamsRepository repo)
     {
         InitializeComponent();
 
         MainPage = new AppShell();
+
+        TeamsRepository = repo;
     }
 }

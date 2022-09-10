@@ -4,9 +4,9 @@ namespace BaBTeams.View;
 
 public partial class DetailsPage : ContentPage
 {
-	public DetailsPage(TeamDetailViewModel viewModel)
-	{
-		InitializeComponent();
-		BindingContext = viewModel;
-	}
+    public DetailsPage(TeamDetailViewModel viewModel)
+    {
+        InitializeComponent();
+        BindingContext = viewModel;
+    }
 }
