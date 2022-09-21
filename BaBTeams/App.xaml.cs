@@ -4,14 +4,10 @@ namespace BaBTeams;
 
 public partial class App : Application
 {
-    public static TeamsRepository TeamsRepository { get; private set; }
-
-    public App(TeamsRepository repo)
+    public App()
     {
         InitializeComponent();
 
         MainPage = new AppShell();
-
-        TeamsRepository = repo;
     }
 }

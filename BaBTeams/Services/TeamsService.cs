@@ -1,14 +1,17 @@
-﻿using BaBTeams.Model;
+﻿using BaBTeams.Data;
+using BaBTeams.Model;
 //using System.Net.Http.Json;
-using System.Text.Json;
+//using System.Text.Json;
 
 namespace BaBTeams.Services
 {
     public class TeamsService
     {
+        public static TeamsRepository _repo { get; private set; }
         //HttpClient httpClient;
-        public TeamsService()
+        public TeamsService(TeamsRepository repo)
         {
+            _repo = repo;
             //this.httpClient = new HttpClient();
         }
 
@@ -26,10 +29,13 @@ namespace BaBTeams.Services
             //}
 
             // Offline
-            using var stream = await FileSystem.OpenAppPackageFileAsync("teamsdata.json");
-            using var reader = new StreamReader(stream);
-            var contents = await reader.ReadToEndAsync();
-            teamList = JsonSerializer.Deserialize<List<Team>>(contents);
+            //using var stream = await FileSystem.OpenAppPackageFileAsync("teamsdata.json");
+            //using var reader = new StreamReader(stream);
+            //var contents = await reader.ReadToEndAsync();
+            //teamList = JsonSerializer.Deserialize<List<Team>>(contents);
+
+            // Sqlite3
+            teamList = _repo.GetAllTeams();
 
             return teamList;
         }
