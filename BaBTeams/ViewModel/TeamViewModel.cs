@@ -11,6 +11,7 @@ namespace BaBTeams.ViewModel
     {
         TeamsService service;
 
+        // TODO: Colecciones observables
         public ObservableCollection<Team> Teams { get; } = new();
 
         public TeamViewModel(TeamsService teamsService)
@@ -20,6 +21,7 @@ namespace BaBTeams.ViewModel
             Title = "All teams in Spain";
         }
 
+        // TODO: Commands
         [RelayCommand]
         async Task GetTeamsAsync()
         {

@@ -19,6 +19,8 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
+        // TODO: Inyección de dependencias 💉
+
         // Services
         builder.Services.AddSingleton<TeamsService>();
         string dbPath = FileAccessHelper.GetLocalFilePath("teams.db3");
@@ -33,5 +35,7 @@ public static class MauiProgram
         builder.Services.AddTransient<DetailsPage>();
 
         return builder.Build();
+
+        // TODO: CI en GitHub
     }
 }

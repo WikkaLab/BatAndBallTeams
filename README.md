@@ -7,11 +7,12 @@ Experimentando y aprendiendo sobre .NET MAUI
 - [CommunityToolkit](https://github.com/communitytoolkit/dotnet?WT.mc_id=AZ-MVP-5003494)
 - [MVVM toolkit sample app](https://apps.microsoft.com/store/detail/mvvm-toolkit-sample-app/9NKLCF1LVZ5H)
 - [sqlite-net-pcl](https://www.nuget.org/packages/sqlite-net-pcl/)
-- [XAML styleguide](https://github.com/marcoablanco/XamlStyleGuide)
+- [XAML styleguide, buscando _contributors_](https://github.com/marcoablanco/XamlStyleGuide)
 - [MVVM-S](https://www.youtube.com/watch?v=ve0DFu-arD8)
 - [Inyección de dependencias](https://youtu.be/xx1mve2AQr4)
 - [Validation rules](https://luismts.com/password-validation-rules-xamarin-forms/)
 - [Azure DevOps for dotnet MAUI](https://devblogs.microsoft.com/dotnet/devops-for-dotnet-maui/)
+- [Unit Testing .NET MAUI Apps with xUnit](https://youtu.be/C9vIDLQwc7M)
 
 ### Charlas sobre este repositorio
 

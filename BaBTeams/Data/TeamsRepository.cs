@@ -10,7 +10,7 @@ namespace BaBTeams.Data
 
         public string StatusMessage { get; set; }
 
-
+        // TODO: acceso a DB con sqlite-net-pcl
         private void Init()
         {
             if (connection != null) return;

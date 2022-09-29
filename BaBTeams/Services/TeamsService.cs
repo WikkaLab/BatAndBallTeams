@@ -17,6 +17,8 @@ namespace BaBTeams.Services
         }
 
         List<Team> teamList;
+
+        // TODO: MVVM-S
         public async Task<List<Team>> GetAllTeams()
         {
             if (teamList?.Count > 0)
